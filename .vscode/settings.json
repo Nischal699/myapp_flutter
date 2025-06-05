@@ -1,3 +1,4 @@
 {
-    "git.ignoreLimitWarning": true
+    "git.ignoreLimitWarning": true,
+    "cmake.sourceDirectory": "C:/Users/ACER/OneDrive/Desktop/FLUTTER/coffee_card/windows/flutter"
 }

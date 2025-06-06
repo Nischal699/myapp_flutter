@@ -24,7 +24,7 @@ class Home extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Container(
-            color: Colors.brown[300],
+            color: Colors.brown[200],
             padding: const EdgeInsets.all(16.0),
             child: Text(
               'Welcome to My Coffee Shop!',

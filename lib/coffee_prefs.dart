@@ -8,8 +8,24 @@ class CoffeePrefs extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Row(children: [Text("Strengeth: "), Text('3'), SizedBox(width: 50)]),
-        Row(children: [Text("Sugars: "), Text('3'), SizedBox(width: 50)]),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Text("Strengeth: "),
+            Text('3'),
+            Image.asset('assets/img/1.jpg', width: 25, height: 25),
+            SizedBox(width: 50),
+          ],
+        ),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Text("Sugars: "),
+            Text('3'),
+            Image.asset('assets/img/2.jpg', width: 25, height: 25),
+            SizedBox(width: 50),
+          ],
+        ),
       ],
     );
   }

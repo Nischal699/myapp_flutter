@@ -1,3 +1,5 @@
+import 'package:coffee_card/styled_body_text.dart';
+import 'package:coffee_card/styled_button.dart';
 import 'package:flutter/material.dart';
 
 // This is a simple Flutter application that displays a welcome message
@@ -44,10 +46,9 @@ class _CoffeePrefsState extends State<CoffeePrefs> {
       children: [
         Row(
           children: [
-            Text("Strengeth: "),
+            StyledBodyText("Strengeth: "),
 
-            if (strength == 0)
-              const Text('No strength', style: TextStyle(color: Colors.brown)),
+            if (strength == 0) const StyledBodyText('No strength'),
 
             for (int i = 0; i < strength; i++)
               Image.asset(
@@ -59,14 +60,7 @@ class _CoffeePrefsState extends State<CoffeePrefs> {
               ),
 
             Expanded(child: SizedBox()),
-            FilledButton(
-              style: FilledButton.styleFrom(
-                backgroundColor: Colors.brown[800],
-                foregroundColor: Colors.white,
-              ),
-              onPressed: increaseStrength,
-              child: const Text('+'),
-            ),
+            StyledButton(onPressed: increaseStrength, child: const Text('+')),
           ],
         ),
         Row(
@@ -86,14 +80,7 @@ class _CoffeePrefsState extends State<CoffeePrefs> {
               ),
 
             Expanded(child: SizedBox()),
-            FilledButton(
-              style: FilledButton.styleFrom(
-                backgroundColor: Colors.brown[800],
-                foregroundColor: Colors.white,
-              ),
-              onPressed: increaseSugar,
-              child: const Text('+'),
-            ),
+            StyledButton(onPressed: increaseSugar, child: const Text('+')),
           ],
         ),
       ],
